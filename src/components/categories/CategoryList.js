@@ -20,7 +20,7 @@ class CategoryList extends Component {
       <div>
         <h3>
           <Badge color="warning">
-            Categories
+            <span style={{color: 'black'}}>Categories</span>
           </Badge>
         </h3>
 
