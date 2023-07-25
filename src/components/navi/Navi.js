@@ -19,7 +19,7 @@ function Navi (args) {
   return (
     <div>
       <Navbar {...args} color="dark" dark expand="md">
-        <NavbarBrand><Link to="/">Northwind</Link></NavbarBrand>
+        <Link to="/">Northwind</Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ms-auto" navbar>
