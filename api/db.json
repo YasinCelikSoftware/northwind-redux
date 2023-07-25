@@ -13,8 +13,8 @@
       "categoryId": 1,
       "productName": "Chang",
       "quantityPerUnit": "24 - 12 oz bottles",
-      "unitPrice": "21",
-      "unitsInStock": 17
+      "unitPrice": "24",
+      "unitsInStock": "17"
     },
     {
       "id": 4,
@@ -609,11 +609,11 @@
       "unitsInStock": 32
     },
     {
-      "productName": "Laptop",
-      "categoryId": 4,
-      "unitPrice": "1000",
-      "quantityPerUnit": "1",
-      "unitsInStock": "2",
+      "productName": "Yasin",
+      "categoryId": 7,
+      "unitPrice": "31",
+      "quantityPerUnit": "32",
+      "unitsInStock": "33",
       "id": 78
     }
   ],
