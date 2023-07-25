@@ -5,6 +5,7 @@ import {bindActionCreators} from 'redux';
 import * as productActions from '../../redux/actions/productActions';
 import * as cartActions from '../../redux/actions/cartActions';
 import alertify from 'alertifyjs';
+import {Link} from 'react-router-dom';
 
 class ProductList extends Component {
   componentDidMount () {
@@ -20,7 +21,7 @@ class ProductList extends Component {
       <div>
         <h3>
           <Badge color="warning">
-            <span style={{color: 'black'}}>Products</span>
+            <span className="badge-span">Products</span>
           </Badge>
           <Badge color="success">
             {this.props.currentCategory.categoryName}
@@ -56,7 +57,9 @@ class ProductList extends Component {
                   {product.id}
                 </th>
                 <td>
-                  {product.productName}
+                  <Link to={'/saveproduct/' + product.id}>
+                    {product.productName}
+                  </Link>
                 </td>
                 <td>
                   {product.quantityPerUnit}
