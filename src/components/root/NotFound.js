@@ -11,7 +11,7 @@ export default class NotFound extends Component {
           style={{height: '90vh'}}
         >
           <Col xs="auto">
-            <h1>PAGE NOT FOUND</h1>
+            <h1 style={{fontSize: '150px'}}>PAGE NOT FOUND</h1>
             <Link to="/">Anasayfaya Dön</Link>
           </Col>
         </Row>
