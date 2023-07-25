@@ -3,8 +3,14 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import * as cartActions from '../../redux/actions/cartActions';
 import {Table, Button} from 'reactstrap';
+import alertifyjs from 'alertifyjs';
 
 class CartDetail extends Component {
+  removeFromCart = cartItem => {
+    this.props.actions.removeFromCart (cartItem);
+    alertifyjs.error (cartItem.product.productName + ' sepetten çıkarıldı.');
+  };
+
   renderCart () {
     return (
       <Table striped>
@@ -55,7 +61,7 @@ class CartDetail extends Component {
               <td>
                 <Button
                   color="danger"
-                  onClick={() => this.props.actions.removeFromCart (cartItem)}
+                  onClick={() => this.removeFromCart (cartItem)}
                 >
                   Sil
                 </Button>
