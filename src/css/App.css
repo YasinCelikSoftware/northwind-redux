@@ -1,3 +1,24 @@
-Table {
-  text-align: center;
+.categoryItem span {
+  cursor: pointer;
+}
+
+.product-detail-input,
+.category-select {
+  margin-bottom: 15px;
+}
+
+input::placeholder {
+  opacity: 0.5 !important;
+}
+
+.badge-span {
+  color: black !important;
+}
+
+.badge-guncelle {
+  color: blue !important;
+}
+
+.badge-ekle {
+  color: purple !important;
 }
