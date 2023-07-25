@@ -4,6 +4,7 @@ import Dashboard from './Dashboard';
 import {Route, Routes} from 'react-router-dom';
 import CartDetail from '../cart/CartDetail';
 import NotFound from './NotFound';
+import '../../css/App.css';
 
 function App () {
   return (
