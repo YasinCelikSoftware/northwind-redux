@@ -26,9 +26,9 @@ export default function cartReducer (state = initialState.cart, action) {
       var existingItem = state.find (
         c => c.product.id === action.payload.product.id
       );
-      var newState;
+      var newState2;
       if (action.payload.quantity > 1) {
-        newState = state.map (cartItem => {
+        newState2 = state.map (cartItem => {
           if (cartItem.product.id === action.payload.product.id) {
             return Object.assign ({}, existingItem, {
               quantity: existingItem.quantity - 1,
@@ -37,11 +37,11 @@ export default function cartReducer (state = initialState.cart, action) {
           return cartItem;
         });
       } else {
-        newState = state.filter (
+        newState2 = state.filter (
           cartItem => cartItem.product.id !== action.payload.product.id
         );
       }
-      return newState;
+      return newState2;
 
     default:
       return state;
