@@ -20,7 +20,7 @@ class CategoryList extends Component {
       <div>
         <h3>
           <Badge color="warning">
-            <span style={{color: 'black'}}>Categories</span>
+            <span className="badge-span">Categories</span>
           </Badge>
         </h3>
 
@@ -30,8 +30,9 @@ class CategoryList extends Component {
               active={category.id === this.props.currentCategory.id}
               key={category.id}
               onClick={() => this.selectCategory (category)}
+              className="categoryItem"
             >
-              {category.categoryName}
+              <span>{category.categoryName}</span>
             </ListGroupItem>
           ))}
 
